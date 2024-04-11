@@ -15,7 +15,13 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
+        },
+        stage('Result'){
+            steps{
+                echo "Result collected"
+            }
         }
+
         stage('Deliver') {
             steps {
                 echo "Deliver complete"
