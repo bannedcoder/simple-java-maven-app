@@ -20,7 +20,7 @@ pipeline {
             steps{
                 echo "Result collected"
             }
-        }
+        },
 
         stage('Deliver') {
             steps {
